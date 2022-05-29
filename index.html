@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+
     <title>Sentence Generator</title>
   </head>
   <body>
@@ -14,7 +16,7 @@
         <a href="about.html">About</a>
         <!-- <a href=""></a> -->
         <button
-          onclick="window.location.href='https://www.google.com/';"
+          onclick="window.location.href='https://github.com/andrewlapointe';"
           class="btn"
           style="z-index: 12"
         >
@@ -22,5 +24,24 @@
         </button>
       </div>
     </header>
+    <main>
+      <div class="sentence-container">
+        <div id="sentence" class="sentence"></div>
+      </div>
+      <div id="part-of-speech" class="part-of-speech">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <button
+        id="new-sentence-button"
+        onclick="getSentence(update = true)"
+        style="z-index: 12"
+      >
+        New Sentence
+      </button>
+    </main>
+    <script src="js/sentence-generator.js"></script>
   </body>
 </html>

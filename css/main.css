@@ -1,0 +1,29 @@
+.sentence-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.sentence {
+  margin-top: 200px;
+  font-size: xx-large;
+}
+
+#new-sentence-button {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 21px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  background-color: #2196f3;
+}
+
+#new-sentence-button:hover {
+  background: #0b7dda;
+}
